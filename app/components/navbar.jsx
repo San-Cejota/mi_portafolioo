@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* LOGO */}
       <div className="logo">
-        <a href="https://github.com/San-Cejota" target="_blank"><span className="circle">C</span></a>
+        <a href="https://github.com/San-Cejota" target="_blank"><img src="/icon.png" alt="logo" className="logo-img" /></a>
         
 
         <div>
