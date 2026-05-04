@@ -7,14 +7,14 @@ export default function Projects() {
   const projects = [
     {
       name: "Licorería Fake Gods",
-      desc: "E-commerce con carrito y gestión de productos",
+      desc: "Aplicacion de escritorio para la automatización con caja registradora",
       tech: ["C#", ".NET", "SqlServer"],
       github: "https://github.com/San-Cejota/Licoreria_FG",
       img: "/projects/licoreria.png"
     },
     {
       name: "Alforga",
-      desc: "Sistema de inventario y ventas",
+      desc: "Sistema para automizar horas de labor social",
       tech: ["HTML", "CSS", "JavaScript", "Firebase"],
       github: "https://github.com/San-Cejota/Alforgaa",
       img: "/projects/alforga.png"
