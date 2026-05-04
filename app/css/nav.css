@@ -1,0 +1,167 @@
+
+.navbar{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(232,238,242,.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  z-index: 999;
+}
+
+/* LOGO */
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.circle{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#77B6EA,#37393A);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo h2{
+  margin: 0;
+  font-size: 22px;
+}
+
+.logo p{
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+
+/* MENU DESKTOP */
+
+.desktop-menu{
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.desktop-menu a{
+  text-decoration: none;
+  color: #37393A;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.desktop-menu a:hover{
+  background: #77B6EA;
+  color: white;
+}
+
+/* BOTON MENU */
+
+.menu-btn{
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* BARRAS */
+
+.bar{
+  position: absolute;
+  left: 8px;
+  width: 26px;
+  height: 3px;
+  background: #37393A;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+
+.bar1{ top:10px; }
+.bar2{ top:19px; }
+.bar3{ top:28px; }
+
+/* X */
+
+.bar1.active{
+  transform: rotate(45deg);
+  top:19px;
+}
+
+.bar2.active{
+  opacity:0;
+}
+
+.bar3.active{
+  transform: rotate(-45deg);
+  top:19px;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+  position: absolute;
+  top: 75px;
+  right: 15px;
+  width: 220px;
+  background: #C7D3DD;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+
+.mobile-menu a{
+  text-decoration: none;
+  color: #37393A;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.mobile-menu a:hover{
+  background: #77B6EA;
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+  .desktop-menu{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .logo h2{
+    font-size:18px;
+  }
+
+  .logo p{
+    font-size:10px;
+    letter-spacing:3px;
+  }
+
+  .circle{
+    width:40px;
+    height:40px;
+    font-size:20px;
+  }
+}
