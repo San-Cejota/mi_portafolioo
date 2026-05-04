@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: font1;
+  src: url(/fonts/fuente.ttf)format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .about{
   padding: 100px 20px;
   background: #C7D3DD;
@@ -37,6 +42,7 @@
 }
 
 .about-content h2{
+  font-family: font1;
   font-size: 42px;
   color: #37393A;
   margin-bottom: 20px;

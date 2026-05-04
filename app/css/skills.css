@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: font1;
+  src: url(/fonts/fuente.ttf)format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .skills{
   padding: 110px 20px;
   background: linear-gradient(180deg, #E8EEF2, #C7D3DD);
@@ -10,21 +15,18 @@
 }
 
 .skills h2{
+  font-family: font1;
   text-align: center;
   font-size: 44px;
   margin-bottom: 60px;
   color: #37393A;
 }
 
-/* GRID */
-
 .skills-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
 }
-
-/* CARD */
 
 .skill-card{
   position: relative;
@@ -33,15 +35,11 @@
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-
   background: rgba(255,255,255,0.25);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255,255,255,0.3);
-
   transition: all .4s ease;
 }
-
-/* BORDE BRILLO */
 
 .skill-card::before{
   content: "";
@@ -61,8 +59,6 @@
   opacity: .4;
 }
 
-/* ICONO */
-
 .skill-icon{
   font-size: 42px;
   margin-bottom: 15px;
@@ -71,17 +67,13 @@
   color: #37393A;
   transition: .35s ease;
 }
-
-/* TITULO */
-
 .skill-card h3{
+  font-family: font1;
   font-size: 20px;
   color: #37393A;
   margin-bottom: 12px;
   transition: .3s ease;
 }
-
-/* DESCRIPCION OCULTA */
 
 .skill-desc{
   opacity: 0;

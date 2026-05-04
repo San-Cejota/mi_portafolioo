@@ -1,6 +1,6 @@
 "use client";
 import "../css/projects.css"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 
 export default function Projects() {
 
@@ -22,9 +22,23 @@ export default function Projects() {
     {
       name: "Climax",
       desc: "Landing moderna con animaciones",
-      tech: ["Next.js"],
+      tech: ["Angular", "SCSS","TypeScript", "JavaScript"],
       github: "https://github.com/San-Cejota/openweather",
       img: "/projects/climax.png"
+    },
+    {
+      name: "FakeGods",
+      desc: "E-commerce de zapatos con carrito y gestión de productos",
+      tech: ["React", "Node.js", "JavaScript", "CSS"],
+      github: "https://github.com/San-Cejota/FakeGods",
+      img: "/projects/fg.png"
+    },
+    {
+      name: "Day_Off",
+      desc: "Aplicacion movil para jovenes universitarios que buscan trabajo a tiempo parcial",
+      tech: ["React", "Node.js", "Typescript", "CSS"],
+      github: "https://github.com/San-Cejota/Day_Off",
+      img: "/projects/day_off.png"
     }
   ];
 
@@ -58,11 +72,11 @@ export default function Projects() {
                   </a>
                 </div>
               </div>
+              
 
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

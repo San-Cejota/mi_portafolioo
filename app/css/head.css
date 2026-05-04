@@ -1,6 +1,13 @@
-/* HERO */
+@font-face {
+  font-family: font1;
+  src: url(/fonts/fuente.ttf)format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .hero{
+  font-family: font1;
+  font-weight: bold;
   height: 30vh;
   display: flex;
   flex-direction: column;

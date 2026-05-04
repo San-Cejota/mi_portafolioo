@@ -1,5 +1,12 @@
+@font-face {
+  font-family: font1;
+  src: url(/fonts/fuente.ttf)format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .navbar{
+  font-family: font1;
   position: sticky;
   top: 0;
   width: 100%;

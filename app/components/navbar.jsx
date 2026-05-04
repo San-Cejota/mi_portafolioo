@@ -12,7 +12,8 @@ export default function Navbar() {
     <nav className="navbar">
       {/* LOGO */}
       <div className="logo">
-        <span className="circle">C</span>
+        <a href="https://github.com/San-Cejota" target="_blank"><span className="circle">C</span></a>
+        
 
         <div>
           <h2>Carlos Delgado</h2>
