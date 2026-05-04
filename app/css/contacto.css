@@ -1,0 +1,165 @@
+@font-face {
+    font-family: font;
+    src: url(/fonts/fuente.ttf)format("truetype");
+}
+.contact{
+  padding: 110px 20px;
+  background: linear-gradient(180deg,#E8EEF2,#C7D3DD);
+  text-align: center;
+}
+
+.contact h2{
+    font-family: font;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #37393A;
+}
+
+/* FORM */
+
+.contact-form{
+  max-width: 520px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 15px 30px rgba(0,0,0,.08);
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+  background: rgba(255,255,255,0.6);
+  transition: .3s;
+}
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  background: #fff;
+  box-shadow: 0 0 0 2px #77B6EA;
+}
+
+/* TEXTAREA */
+
+.contact-form textarea{
+  resize: none;
+}
+
+/* BOTON */
+
+.contact-form button{
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg,#77B6EA,#5fa3da);
+  color: white;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+/* HOVER */
+
+.contact-form button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+  .contact{
+    padding: 80px 20px;
+  }
+
+  .contact h2{
+    font-size: 34px;
+  }
+
+  .contact-form{
+    padding: 22px;
+  }
+
+}
+.msg{
+  margin-top: 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .4s ease;
+}
+
+/* aparece */
+.msg.sent{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* contenedor */
+.success{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2ecc71;
+  font-size: 14px;
+}
+
+/* SVG */
+
+.check{
+  width: 24px;
+  height: 24px;
+}
+
+/* círculo animado */
+.check-circle{
+  fill: none;
+  stroke: #2ecc71;
+  stroke-width: 2;
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+  animation: drawCircle 0.6s ease forwards;
+}
+
+/* check animado */
+.check-mark{
+  fill: none;
+  stroke: #2ecc71;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 36;
+  stroke-dashoffset: 36;
+  animation: drawCheck 0.4s 0.6s ease forwards;
+}
+
+/* animaciones */
+
+@keyframes drawCircle{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
